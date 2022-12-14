@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STRUCTURE */
+
+.container, .row , .items{
+    width: 100%;
+}
+
+.row{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 70%;
+    height: 80vh;
+    position: relative;
+}
+
+.items, .cont-items{
+    height: 100%;
+}
+.items img, .item-thumbnails img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont-thumbnails{
+    height: 80%;
+    width: 22%;
+}
+
+.thumbnails{
+    height: 20%;
+}
+
+.item-thumbnails{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(15, 15, 15, 0.589);
+}
+
+.no_layer{
+    background-color: rgba(255, 255, 255, 0);
+    border: 4px solid red;
+}
+
+.cont-descr{
+    text-align: right;
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+}
+
+.title, .description{
+    color: white;
+}
+
+
+.btn-next, .btn-prev{
+    position: absolute;
+    background-color: rgb(180, 180, 180);
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.btn-next{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.btn-prev{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.btn-next:hover, .btn-prev:hover{
+    background-color: grey; 
+}
+
+.cont-circles{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.items{
+    display: none;
+}
+
+.items.active{
+    display: block;
+}
+
+.circle.active{
+    background-color: grey;
+}
