@@ -22,7 +22,7 @@
     height: 80vh;
     position: relative;
 }
-.items{
+.items, .cont-items{
     height: 100%;
 }
 .items img{
@@ -30,6 +30,18 @@
     height: 100%;
     object-fit: cover;
 }
+
+.cont-descr{
+    text-align: right;
+    position: absolute;
+    bottom: 70px;
+    right: 10px;
+}
+
+.title, .description{
+    color: white;
+}
+
 
 .btn-next, .btn-prev{
     position: absolute;
@@ -67,4 +79,12 @@
     background-color: rgb(180, 180, 180);
     border-radius: 50%;
     margin: 10px;
+}
+
+.items{
+    display: none;
+}
+
+.active{
+    display: block;
 }
