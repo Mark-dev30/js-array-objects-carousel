@@ -85,6 +85,10 @@
     display: none;
 }
 
-.active{
+.items.active{
     display: block;
+}
+
+.circle.active{
+    background-color: grey;
 }
